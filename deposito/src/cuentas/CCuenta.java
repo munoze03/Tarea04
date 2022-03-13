@@ -1,3 +1,8 @@
+/**
+ * Clase que crea la cuenta bancaria de un cliente.
+ * @author Enrique Muñoz Diez
+ * @version 1.0
+ */
 package cuentas;
 public class CCuenta {
 
@@ -43,6 +48,7 @@ public class CCuenta {
     {
     }
 
+    // Creacion de constructor con parametros.
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -50,11 +56,19 @@ public class CCuenta {
         saldo=sal;
     }
 
+ /**
+  * @return Metodo que nos devuelve el Saldo de la cuenta actual
+  */
     public double estado()
     {
         return saldo;
     }
 
+/**
+ * 
+ * @param cantidad. Cantidad de dinero a ingresar en la cuenta
+ * @throws Exception. Excepcion que se muestra para no ingresar cantidad negativa.
+ */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -62,6 +76,11 @@ public class CCuenta {
         saldo = saldo + cantidad;
     }
 
+/**
+ * 
+ * @param cantidad. Cantidad de dinero a retirar en la cuenta
+ * @throws Exception. Excepcion que se muestra para no retirar cantidad negativa.
+ */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
