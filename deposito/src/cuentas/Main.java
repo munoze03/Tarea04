@@ -1,7 +1,16 @@
+/**
+ * Clase Principal que ejecuta el programa
+ */
 package cuentas;
 public class Main {
 
+/**
+ * Metodo Main principal que crea la cuenta.
+ */
     public static void main(String[] args) {
+    	/**
+    	 * Establecemos los atributos de la cuenta nueva.
+    	 */
         CCuenta cuenta1;
         double saldoActual;
 
@@ -20,6 +29,11 @@ public class Main {
         }
     }
 
+/**    
+ * @return. Metodo que genera una cuenta nueva estableciendo
+ * los parametros de entrada como nombre, numero de cuenta y 
+ * saldo y nos devuelve dichos datos.
+ */
 	private static CCuenta operativo_Cuenta() {
 		CCuenta cuenta1;
 		double saldoActual;

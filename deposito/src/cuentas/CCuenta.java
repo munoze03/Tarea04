@@ -12,38 +12,63 @@ public class CCuenta {
     private double saldo;
     private double tipoInteres;
 
+/**
+ * @return Metodo que nos devuelve el nombre de la cuenta
+ */
     public String getNombre() {
 		return nombre;
 	}
 
+/**    
+ * @param nombre Metodo que establece el nombre de la cuenta
+ */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	
+/**
+ * @return Metodo que nos devuelve la cuenta bancaria
+ */
 	public String getCuenta() {
 		return cuenta;
 	}
-
+	
+/**
+ * @param cuenta Metodo que establece el numero de cuenta
+ */
 	public void setCuenta(String cuenta) {
 		this.cuenta = cuenta;
 	}
 
+/**
+ * @return Metodo que nos devuelve el saldo de la cuenta
+ */
 	public double getSaldo() {
 		return saldo;
 	}
 
+/**	
+ * @param saldo Metodo que establece el saldo de la cuenta.
+ */
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 
+/**
+ * @return Metodo que nos devuelve el tipo de interes
+ */
 	public double getTipoInteres() {
 		return tipoInteres;
 	}
 
+/**	
+ * @param tipoInteres Metodo que establece el tipo de interes
+ */
 	public void setTipoInteres(double tipoInteres) {
 		this.tipoInteres = tipoInteres;
 	}
 
+	// Creacion de contructor predeterminado sin parametros.
     public CCuenta()
     {
     }
